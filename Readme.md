@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Slava Milin](https://up.htmlacademy.ru/adaptive/10/user/186764).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Протасов`.
 
 ---
 
@@ -59,3 +59,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/186764-sedona
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/186764-sedona/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/186764-sedona?type=dev
+
