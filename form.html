@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__navigation">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Главная</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Фото и видео</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Форма отзыва</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <button class="main-header__close-menu">Закрыть</button>
+      <div class="div main-header__menu-wrap">
+        <div class="main-header__logo"><img src="#" alt="City Sedona"></div>
+        <button class="main-header__menu-btn" type="button">Меню</button>
+      </div>
+    </header>
+    <div class="img-title"><img src="#" alt="Седона" class="img-title__picture"></div>
+    <section class="explanation">
+      <h2 class="explanation__title">Оставьте свой отзыв</h2>
+      <p class="explanation__about">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <form method="get" class="form" action="https://echo.htmlacademy.ru/">
+      <fieldset class="form__person person">
+        <legend class="person-title">Представьтесь:</legend>
+        <div class="person__wrap">
+          <label class="person__label" for="name1">Имя*:</label>
+          <input class="person__input" type="text" id="name1" placeholder="Петр" name="name-first">
+        </div>
+        <div class="person__wrap">
+          <label class="person__label" for="name2">Фамилия*:</label>
+          <input class="person__input" type="text" id="name2" placeholder="Иванов" name="name-mid">
+        </div>
+        <div class="person__wrap">
+          <label class="person__label" for="name3">Отчество</label>
+          <input class="person__input" type="text" id="name3" placeholder="Александрович" name="name-last">
+        </div>
+      </fieldset>
+      <fieldset class="form__contact-inf contact-inf">
+        <legend class="contact-inf__title">Контактная информация:</legend>
+        <div class="contact-inf__wrap">
+          <label for="contact1" class="contact-inf__label">Контактный телефон*:</label>
+          <input type="text" class="contact-inf__input" id="contact1" placeholder="Введите телефон" name="tel">
+        </div>
+        <div class="contact-inf__wrap">
+          <label for="contact2" class="contact-inf__label">Электронная почта*:</label>
+          <input type="email" class="contact-inf__input" id="contact2" placeholder="Введите e-mail" name="email">
+        </div>
+      </fieldset>
+      <fieldset class="form__impression impression">
+        <legend class="impression__title">Ваше впечатление:</legend>
+        <div class="impression-layout">
+          <input type="radio" class="impression__input" id="impression1" name="impression" checked>
+          <label for="impression1" class="impression__label">Скорее положительное</label>
+        </div>
+        <div class="impression-layout">
+          <input type="radio" class="impression__input" id="impression2" name="impression">
+          <label for="impression2" class="impression__label">Скорее отрицательное</label>
+        </div>
+        <div class="impression-layout">
+          <input type="radio" class="impression__input" id="impression3" name="impression">
+          <label for="impression3" class="impression__label">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset class="form__attraction attraction">
+        <legend class="attraction__title">Посещенные достопримечательности:</legend>
+        <div class="attraction_layout">
+          <input type="checkbox" class="attraction__input" name="attraction" id="attraction1" checked>
+          <label for="attraction1" class="attraction__label">Мост Дьявола</label>
+        </div>
+        <div class="attraction_layout">
+          <input type="checkbox" class="attraction__input" name="attraction" id="attraction2" checked>
+          <label for="attraction2" class="attraction__label">Слайд-парк</label>
+        </div>
+        <div class="attraction_layout">
+          <input type="checkbox" class="attraction__input" name="attraction" id="attraction3">
+          <label for="attraction3" class="attraction__label">Гора-Колокол</label>
+        </div>
+        <div class="attraction_layout">
+          <input type="checkbox" class="attraction__input" name="attraction" id="attraction4" checked>
+          <label for="attraction4" class="attraction__label">Красные скалы</label>
+        </div>
+      </fieldset>
+      <fieldset class="form__emotions emotions">
+        <legend class="emotions__title">Опишите свои эмоции:</legend>
+        <div class="emotions__layout">
+          <textarea name="textarea" cols="30" rows="10" class="emotions__text" placeholder="Опишите подробно свои восторги"></textarea>
+        </div>
+      </fieldset>
+      <button class="form__btn" type="submit">Отправить отзыв</button>
+    </form>
+    <footer class="main-footer">
+      <p class="main-footer__hash"></p>
+      <ul class="main-footer__socials">
+        <li class="main-footer_item"><a href="#" class="main-footer__link">Twit</a></li>
+        <li class="main-footer_item"><a href="#" class="main-footer__link">FB</a></li>
+        <li class="main-footer_item"><a href="#" class="main-footer__link">Youtube</a></li>
+      </ul>
+      <div class="main-footer__copyright-wrap">
+        <p class="main-footer__copyright">Разаботано</p>
+        <a href="#" class="main-footer__copyright-img"><img src="#" alt="HTML Academy"></a>
+      </div>
+    </footer>
+  </body>
+</html>
