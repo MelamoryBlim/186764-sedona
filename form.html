@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__navigation">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Главная</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Фото и видео</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">Форма отзыва</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <button class="main-header__close-menu">Закрыть</button>
+      <div class="main-header__menu-wrap">
+        <div class="main-header__logo">
+          <img src="#" alt="City Sedona">
+        </div>
+        <button class="main-header__menu-btn" type="button">Меню</button>
+      </div>
+    </header>
+    <div class="img-title">
+      <img class="img-title__picture" src="#" alt="Седона">
+    </div>
+    <section class="explanation">
+      <h2 class="explanation__title">Оставьте свой отзыв</h2>
+      <p class="explanation__about">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <form class="form" method="get" action="https://echo.htmlacademy.ru/">
+      <div class="form__person person">
+        <h2 class="person-title">Представьтесь:</h2>
+        <label class="person__label">
+          <span class="person__label-text">Имя*:</span>
+          <input class="person__input" type="text" placeholder="Петр" name="name-first">
+        </label>
+        <label class="person__label">
+          <span class="person__label-text">Фамилия*:</span>
+          <input class="person__input" type="text" placeholder="Иванов" name="name-mid">
+        </label>
+        <label class="person__label">
+          <span class="person__label-text">Отчество</span>
+          <input class="person__input" type="text" placeholder="Александрович" name="name-last">
+        </label>
+      </div>
+      <div class="form__contact-inf contact-inf">
+        <h2 class="contact-inf__title">Контактная информация:</h2>
+        <label class="contact-inf__label">
+          <span class="contact-inf__label-text">Контактный телефон*:</span>
+          <input class="contact-inf__input" type="text" placeholder="Введите телефон" name="tel">
+        </label>
+        <label class="contact-inf__label">
+          <span class="contact-inf__label-text">Электронная почта*:</span>
+          <input class="contact-inf__input" type="email" placeholder="Введите e-mail" name="email">
+        </label>
+      </div>
+      <div class="form__impression impression">
+        <h2 class="impression__title">Ваше впечатление:</h2>
+        <label class="impression__label">
+          <input class="impression__input" type="radio" name="impression" checked>
+          <span class="impression__label-text">Скорее положительное</span>
+        </label>
+        <label class="impression__label">
+          <input class="impression__input" type="radio" name="impression">
+          <span class="impression__label-text">Скорее отрицательное</span>
+        </label>
+        <label class="impression__label">
+          <input class="impression__input" type="radio" name="impression">
+          <span class="impression__label-text">Затрудняюсь ответить</span>
+        </label>
+      </div>
+      <div class="form__attraction attraction">
+        <h2 class="attraction__title">Посещенные достопримечательности:</h2>
+        <label class="attraction__label">
+          <input class="attraction__input" type="checkbox" name="attraction" checked>
+          <span class="attraction__label-text">Мост Дьявола</span>
+        </label>
+        <label class="attraction__label">
+          <input class="attraction__input" type="checkbox" name="attraction" checked>
+          <span class="attraction__label-text">Слайд-парк</span>
+        </label>
+        <label class="attraction__label">
+          <input class="attraction__input" type="checkbox" name="attraction">
+          <span class="attraction__label-text">Гора-Колокол</span>
+        </label>
+        <label class="attraction__label">
+          <input class="attraction__input" type="checkbox" name="attraction" checked>
+          <span class="attraction__label-text">Красные скалы</span>
+        </label>
+      </div>
+      <div class="form__emotions emotions">
+        <h2 class="emotions__title">Опишите свои эмоции:</h2>
+        <textarea class="emotions__text" name="textarea" cols="30" rows="10" placeholder="Опишите подробно свои восторги"></textarea>
+      </div>
+      <button class="form__btn" type="submit">Отправить отзыв</button>
+    </form>
+    <footer class="main-footer">
+      <p class="main-footer__hash"></p>
+      <div class="main-footer__socials socials">
+        <a class="socials__link" href="#">Twit</a>
+        <a class="socials__link" href="#">FB</a>
+        <a class="socials__link" href="#">Youtube</a>
+      </div>
+      <div class="main-footer__copyright-wrap">
+        <p class="main-footer__copyright">Разаботано</p>
+        <a class="main-footer__copyright-img" href="#">
+          <img src="#" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
