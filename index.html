@@ -10,15 +10,15 @@
       <nav class="main-header__navigation">
         <ul class="main-header__list">
           <li class="main-header__item"><a class="main-header__item-link" href="#">Главная</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Фото и видео</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Форма отзыва</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="photo.html">Фото и видео</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="form.html">Форма отзыва</a></li>
           <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
       <button class="main-header__close-menu">Закрыть</button>
       <div class="main-header__menu-wrap">
         <div class="main-header__logo">
-          <img src="#" alt="City Sedona">
+          <img src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
         </div>
         <button class="main-header__menu-btn" type="button">Меню</button>
       </div>
@@ -35,10 +35,10 @@
     <section class="features-place">
       <header class="features-place__head">
         <h2 class="features-place__title">Настоящий городок</h2>
-        <span class="features-place__number-fetures">- №1 -</span>
+        <span class="features-place__number-features">- №1 -</span>
         <p class="features-place__about-features">Седона не атракцион для туристов, там тчет своя жизнь</p>
       </header>
-      <img class="features-place__image" src="#" alt="City">
+      <div class="features-place__image-layout">City</div>
       <div class="features-place__entertainment">
         <div class="features-place__housing_layout">
           <h3 class="features-place__housing">Жилье</h3>
@@ -60,22 +60,28 @@
         <span class="features-bridge__number-features">- №2 -</span>
         <p class="features-bridge__about-features">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
-      <img src="#" alt="Каньон" class="features-bridge__picture">
+      <div class="features-bridge__picture-layout">Каньон</div>
     </section>
     <section class="features-area">
-      <h2 class="features-area__title">Небольшая площадь</h2>
-      <span class="features-area__number-features">- №3 -</span>
-      <p class="features-area__features-about">Все достопримечательности находятся очень близко</p>
+      <div class="features-area__layout">
+        <h2 class="features-area__title">Небольшая площадь</h2>
+        <span class="features-area__number-features">- №3 -</span>
+        <p class="features-area__about-features">Все достопримечательности находятся очень близко</p>
+      </div>
     </section>
     <section class="features-road">
-      <h1 class="features-road__title">Красива дорога</h1>
-      <span class="features-road__number-features">- №4 -</span>
-      <p class="features-road__features-about">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+      <div class="features-road__layout">
+        <h2 class="features-road__title">Красива дорога</h2>
+        <span class="features-road__number-features">- №4 -</span>
+        <p class="features-road__about-features">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
     </section>
     <section class="features-tourists">
-      <h2 class="features-tourists__title">Мало туристов</h2>
-      <span class="features-tourists__number-features">- №5 -</span>
-      <p class="features-tourists__features-about">Большинство едет в гранд каньон и толпится там</p>
+      <div class="features-tourists__layout">
+        <h2 class="features-tourists__title">Мало туристов</h2>
+        <span class="features-tourists__number-features">- №5 -</span>
+        <p class="features-tourists__about-features">Большинство едет в гранд каньон и толпится там</p>
+      </div>
     </section>
     <section class="location">
       <h2 class="location__title">Заинтересовались?</h2>
@@ -86,7 +92,7 @@
       <div class="map__layout"></div>
     </div>
     <footer class="main-footer">
-      <p class="main-footer__hash"></p>
+      <p class="main-footer__hash">#VISITSEDONA</p>
       <div class="main-footer__socials socials">
         <a class="socials__link" href="#">Twit</a>
         <a class="socials__link" href="#">FB</a>
@@ -94,8 +100,8 @@
       </div>
       <div class="main-footer__copyright-wrap">
         <p class="main-footer__copyright">Разаботано</p>
-        <a class="main-footer__copyright-img" href="#">
-          <img src="#" alt="HTML Academy">
+        <a class="main-footer__copyright-img-layout" href="#">
+          <object class="main-footer__copyright-img" type="image/svg+xml" data="img/logo-htmlacademy.svg" width="27" height="34"></object>
         </a>
       </div>
     </footer>
