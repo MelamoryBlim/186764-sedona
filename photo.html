@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-header__navigation">
         <ul class="main-header__list">
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Главная</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Фото и видео</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Форма отзыва</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="index.html">Главная</a></li>
+          <li class="main-header__item"><a class="main-header__item-link">Фото и видео</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="form.html">Форма отзыва</a></li>
           <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
       <button class="main-header__close-menu">Закрыть</button>
       <div class="main-header__menu-wrap">
         <div class="main-header__logo">
-          <img src="#" alt="City Sedona">
+          <img src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
         </div>
         <button class="main-header__menu-btn" type="button">Меню</button>
       </div>
     </header>
     <div class="img-title">
-      <img class="img-title__picture" src="#" alt="Седона">
+      <div class="img-title__layout">
+        <img class="img-title__picture" src="img/text-sedona.svg" alt="Седона" width="229" height="39">
+      </div>
     </div>
     <section class="media">
       <header class="media__head">
@@ -32,32 +35,40 @@
       </header>
       <section class="media__photo photo">
         <figure class="photo__item">
-          <img class="photo__img" src="#" alt="фото1">
-          <figcaption class="photo__title">Неродные просторы</figcaption>
-          <p class="photo__about">Автор фото: Борис</p>
-          <a class="photo__number-likes">1350</a>
+          <img class="photo__img" src="img/photo-1-mobile@1x.jpg" alt="фото1" width="280" height="280">
+          <figcaption class="photo__description">
+            <h2 class="photo__title">Неродные просторы</h2>
+            <p class="photo__about">Автор фото: Борис</p>
+            <a class="photo__number-likes" href="#">1350</a>
+          </figcaption>
         </figure>
         <figure class="photo__item">
-          <img class="photo__img" src="#" alt="фото2">
-          <figcaption class="photo__title">Местная растительность</figcaption>
-          <p class="photo__about">Автор фото: Сергей</p>
-          <a class="media__number-likes">143</a>
+          <img class="photo__img" src="img/photo-2-mobile@1x.jpg" alt="фото2" width="280" height="280">
+          <figcaption class="photo__description">
+            <h2 class="photo__title">Местная растительность</h2>
+            <p class="photo__about">Автор фото: Сергей</p>
+            <a class="photo__number-likes" href="#">143</a>
+          </figcaption>
         </figure>
         <figure class="photo__item">
-          <img class="photo__img" src="#" alt="фото3">
-          <figcaption class="photo__title">Дорога на север</figcaption>
-          <p class="photo__about">Автор фото: Петр</p>
-          <a class="photo__number-likes">96</a>
+          <img class="photo__img" src="img/photo-3-mobile@1x.jpg" alt="фото3" width="280" height="280">
+          <figcaption class="photo__description">
+            <h2 class="photo__title">Дорога на север</h2>
+            <p class="photo__about">Автор фото: Петр</p>
+            <a class="photo__number-likes" href="#">96</a>
+          </figcaption>
         </figure>
         <figure class="photo__item">
-          <img class="photo__img" src="#" alt="фото4">
-          <figcaption class="photo__title">Мост дьявола</figcaption>
-          <p class="photo__about">Автор фото: Антон</p>
-          <a class="photo__number-likes">254</a>
+          <img class="photo__img" src="img/photo-4-mobile@1x.jpg" alt="фото4" width="280" height="280">
+          <figcaption class="photo__description">
+            <h2 class="photo__title">Мост дьявола</h2>
+            <p class="photo__about">Автор фото: Антон</p>
+            <a class="photo__number-likes" href="#">254</a>
+          </figcaption>
         </figure>
       </section>
       <section class="media__video video">
-        <h2 class="vide__title">Ещё сомневаетесь?</h2>
+        <h2 class="video__title">Ещё сомневаетесь?</h2>
         <p class="video__about">Смотрите видеопрезентацию и скорееза билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__video-player">
           <div class="video__remote-layout">
@@ -73,7 +84,7 @@
       </section>
     </section>
     <footer class="main-footer">
-      <p class="main-footer__hash"></p>
+      <p class="main-footer__hash">#visitsedona</p>
       <div class="main-footer__socials socials">
         <a class="socials__link" href="#">Twit</a>
         <a class="socials__link" href="#">FB</a>
@@ -81,8 +92,8 @@
       </div>
       <div class="main-footer__copyright-wrap">
         <p class="main-footer__copyright">Разаботано</p>
-        <a class="main-footer__copyright-img" href="#">
-          <img src="#" alt="HTML Academy">
+        <a class="main-footer__copyright-img-layout" href="#">
+          <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
         </a>
       </div>
     </footer>

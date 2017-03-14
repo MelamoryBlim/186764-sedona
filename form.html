@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-header__navigation">
         <ul class="main-header__list">
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Главная</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Фото и видео</a></li>
-          <li class="main-header__item"><a class="main-header__item-link" href="#">Форма отзыва</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="index.html">Главная</a></li>
+          <li class="main-header__item"><a class="main-header__item-link" href="photo.html">Фото и видео</a></li>
+          <li class="main-header__item"><a class="main-header__item-link">Форма отзыва</a></li>
           <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
       <button class="main-header__close-menu">Закрыть</button>
       <div class="main-header__menu-wrap">
         <div class="main-header__logo">
-          <img src="#" alt="City Sedona">
+          <img src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
         </div>
         <button class="main-header__menu-btn" type="button">Меню</button>
       </div>
     </header>
     <div class="img-title">
-      <img class="img-title__picture" src="#" alt="Седона">
+      <div class="img-title__layout">
+        <img class="img-title__picture" src="img/text-sedona.svg" alt="Седона" width="229" height="39">
+      </div>
     </div>
     <section class="explanation">
       <h2 class="explanation__title">Оставьте свой отзыв</h2>
@@ -31,7 +34,7 @@
     </section>
     <form class="form" method="get" action="https://echo.htmlacademy.ru/">
       <div class="form__person person">
-        <h2 class="person-title">Представьтесь:</h2>
+        <h2 class="person__title">Представьтесь:</h2>
         <label class="person__label">
           <span class="person__label-text">Имя*:</span>
           <input class="person__input" type="text" placeholder="Петр" name="name-first">
@@ -97,7 +100,7 @@
       <button class="form__btn" type="submit">Отправить отзыв</button>
     </form>
     <footer class="main-footer">
-      <p class="main-footer__hash"></p>
+      <p class="main-footer__hash">#visitsedona</p>
       <div class="main-footer__socials socials">
         <a class="socials__link" href="#">Twit</a>
         <a class="socials__link" href="#">FB</a>
@@ -105,8 +108,8 @@
       </div>
       <div class="main-footer__copyright-wrap">
         <p class="main-footer__copyright">Разаботано</p>
-        <a class="main-footer__copyright-img" href="#">
-          <img src="#" alt="HTML Academy">
+        <a class="main-footer__copyright-img-layout" href="#">
+          <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
         </a>
       </div>
     </footer>
