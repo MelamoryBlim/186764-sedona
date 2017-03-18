@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,16 +17,16 @@
           <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
         </ul>
         <button class="main-header__toggle" type="button">Закрыть</button>
-        <a class="main-header__logo-wrap" href="index.html">
+        <a class="main-header__logo-wrap">
           <img class="main-header__logo" src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
         </a>
       </nav>
-    </header>
-    <div class="img-title">
-      <div class="img-title__layout">
-        <img class="img-title__picture" src="img/text-sedona.svg" alt="Седона" width="229" height="39">
+      <div class="main-header__promo-view promo__view">
+        <div class="promo-view__slogan-layout">
+          <img class="promo-view__logo-title" src="img/text-sedona.svg" alt="Sedona" width="280" height="47">
+        </div>
       </div>
-    </div>
+    </header>
     <section class="explanation">
       <h2 class="explanation__title">Оставьте свой отзыв</h2>
       <p class="explanation__about">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -97,17 +99,21 @@
       <button class="form__btn" type="submit">Отправить отзыв</button>
     </form>
     <footer class="main-footer">
-      <p class="main-footer__hash">#visitsedona</p>
-      <div class="main-footer__socials socials">
-        <a class="socials__link" href="#">Twit</a>
-        <a class="socials__link" href="#">FB</a>
-        <a class="socials__link" href="#">Youtube</a>
-      </div>
-      <div class="main-footer__copyright-wrap">
-        <p class="main-footer__copyright">Разаботано</p>
-        <a class="main-footer__copyright-img-layout" href="#">
-          <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
-        </a>
+      <div class="main-footer__wrap">
+        <p class="main-footer__hash">#visitsedona</p>
+        <div class="main-footer__socials socials">
+          <div class="socials__wrap">
+            <a class="socials__link" href="#">Twit</a>
+            <a class="socials__link" href="#">FB</a>
+            <a class="socials__link" href="#">Youtube</a>
+          </div>
+        </div>
+        <div class="main-footer__copyright-wrap">
+          <p class="main-footer__copyright">Разаботано</p>
+          <a class="main-footer__copyright-img-layout" href="https://htmlacademy.ru">
+            <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
