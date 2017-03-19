@@ -1,6 +1,6 @@
 .location__wrap {
-  min-width: 280px;
   padding: 0 20px;
+  .container();
 }
 .location__title {
   margin: 0;
@@ -14,7 +14,8 @@
 }
 .location__about {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 458px;
 
   font-size: 14px;
   line-height: 24px;
@@ -25,10 +26,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 16px 0;
-  border: 0;
+  max-width: 458px;
+  margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 49px;
+  padding: 16px 0;
+  border: 0;
 
   font-size: 21px;
   line-height: 26px;
@@ -39,17 +42,13 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media @tablet {
   .location__title {
     padding-top: 52px;
     padding-bottom: 35px;
   }
-  .location__about {
-    max-width: 440px;
-    margin: 0 auto;
-  }
   .location__button {
-    max-width: 458px;
-    margin: 42px auto 53px auto;
+    margin-top: 42px;
+    margin-bottom: 53px;
   }
 }

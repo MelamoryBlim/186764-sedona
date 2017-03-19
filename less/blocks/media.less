@@ -1,6 +1,5 @@
 .media__wrap {
-  max-width: 1200px;
-  margin: 0 auto;
+  .container();
 }
 .media__head {
   display: flex;
@@ -15,6 +14,8 @@
   text-transform: uppercase;
 }
 .media__motivation {
+  width: 100%;
+  max-width: 430px;
   margin: 0;
 
   font-size: 14px;
@@ -22,9 +23,9 @@
   text-transform: uppercase;
   text-align: center;
 }
-@media(max-width: 767px) {
+@media @mobile {
   .media__head {
-    padding: 0 20px;
+    padding: 0 25px;
   }
   .media__title {
     padding-top: 38px;
@@ -34,7 +35,7 @@
     padding-bottom: 27px;
   }
 }
-@media(min-width: 768px) {
+@media @tablet {
   .media__wrap {
     padding: 0 60px
   }
@@ -50,7 +51,7 @@
     padding-bottom: 70px;
   }
 }
-@media(min-width: 1200px) {
+@media @desktop {
   .media__wrap {
     padding: 0;
   }

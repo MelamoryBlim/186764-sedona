@@ -5,19 +5,35 @@
   background-color: #ffffff;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center bottom;
   background-size: cover;
 }
 .promo-view__logo-title {
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@media @tablet {
   .promo-view__slogan-layout {
     height: 518px;
   }
   .promo-view__logo-title {
     height: 76px;
     width: 460px;
+  }
+}
+.photo-page .promo-view__slogan-layout,
+.form-page .promo-view__slogan-layout {
+  height: 158px;
+}
+@media @tablet {
+  .photo-page .promo-view__slogan-layout,
+  .form-page .promo-view__slogan-layout {
+    height: 301px;
+  }
+}
+@media @desktop {
+  .photo-page .promo-view__slogan-layout,
+  .form-page .promo-view__slogan-layout {
+    height: 290px;
   }
 }
