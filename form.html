@@ -36,79 +36,91 @@
       </div>
     </section>
     <form class="form" method="get" action="https://echo.htmlacademy.ru/">
-      <div class="form__person person">
-        <div class="person__wrap">
-          <h2 class="person__title">Представьтесь:</h2>
-          <div class="person__label-wrap">
-            <label class="person__label">
-              <span class="person__label-text">Имя*:</span>
-              <input class="person__input" type="text" placeholder="Петр" name="name-first">
-            </label>
-            <label class="person__label">
-              <span class="person__label-text">Фамилия*:</span>
-              <input class="person__input" type="text" placeholder="Иванов" name="name-mid">
-            </label>
-            <label class="person__label">
-              <span class="person__label-text">Отчество</span>
-              <input class="person__input" type="text" placeholder="Александрович" name="name-last">
-            </label>
+      <div class="form__wrap">
+        <div class="form__person person">
+          <div class="person__wrap">
+            <h2 class="person__title">Представьтесь:</h2>
+            <div class="person__label-wrap">
+              <label class="person__label">
+                <span class="person__label-text">Имя*:</span>
+                <input class="person__input" type="text" placeholder="Петр" name="name-first">
+              </label>
+              <label class="person__label">
+                <span class="person__label-text">Фамилия*:</span>
+                <input class="person__input" type="text" placeholder="Иванов" name="name-mid">
+              </label>
+              <label class="person__label">
+                <span class="person__label-text">Отчество</span>
+                <input class="person__input" type="text" placeholder="Александрович" name="name-last">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form__contact-inf contact-inf">
-        <div class="contact-inf__wrap">
-          <h2 class="contact-inf__title">Контактная информация:</h2>
-          <div class="contact-inf__labl-wap">
-            <label class="contact-inf__label">
-              <span class="contact-inf__label-text">Контактный телефон*:</span>
-              <input class="contact-inf__input" type="text" placeholder="Введите телефон" name="tel">
-            </label>
-            <label class="contact-inf__label">
-              <span class="contact-inf__label-text">Электронная почта*:</span>
-              <input class="contact-inf__input" type="email" placeholder="Введите e-mail" name="email">
-            </label>
+        <div class="form__contact-inf contact-inf">
+          <div class="contact-inf__wrap">
+            <h2 class="contact-inf__title">Контактная информация:</h2>
+            <div class="contact-inf__label-wrap">
+              <label class="contact-inf__label">
+                <span class="contact-inf__label-text">Контактный телефон*:</span>
+                <input class="contact-inf__input" type="text" placeholder="Введите телефон" name="tel">
+              </label>
+              <label class="contact-inf__label">
+                <span class="contact-inf__label-text">Электронная почта*:</span>
+                <input class="contact-inf__input" type="email" placeholder="Введите e-mail" name="email" required>
+              </label>
+            </div>
           </div>
         </div>
+        <div class="form__impression impression">
+          <div class="imression__wrap">
+            <h2 class="impression__title">Ваше общее впечатление:</h2>
+            <div class="impression__label-wrap">
+              <input class="impression__input" type="radio" name="impression" id="label-radio1" checked>
+              <label class="impression__label" for="label-radio1">
+                <span class="impression__label-text">Скорее положительное</span>
+              </label>
+              <input class="impression__input" type="radio" name="impression" id="label-radio2">
+              <label class="impression__label" for="label-radio2">
+                <span class="impression__label-text">Скорее отрицательное</span>
+              </label>
+              <input class="impression__input" type="radio" name="impression" id="label-radio3">
+              <label class="impression__label" for="label-radio3">
+                <span class="impression__label-text">Затрудняюсь ответить</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__attraction attraction">
+          <div class="attraction__wrap">
+            <h2 class="attraction__title">Посещенные достопримечательности:</h2>
+            <div class="attraction__checkbox-wrap">
+              <input class="attraction__input" type="checkbox" name="attraction" id="input-checkbox1" checked>
+              <label class="attraction__label" for="input-checkbox1">
+                <span class="attraction__label-text">Мост Дьявола</span>
+              </label>
+              <input class="attraction__input" type="checkbox" name="attraction" id="input-checkbox2" checked>
+              <label class="attraction__label" for="input-checkbox2">
+                <span class="attraction__label-text">Слайд-парк</span>
+              </label>
+              <input class="attraction__input" type="checkbox" name="attraction" id="input-checkbox3">
+              <label class="attraction__label" for="input-checkbox3">
+                <span class="attraction__label-text">Гора-Колокол</span>
+              </label>
+              <input class="attraction__input" type="checkbox" name="attraction" id="input-checkbox4" checked>
+              <label class="attraction__label" for="input-checkbox4">
+                <span class="attraction__label-text">Красные скалы</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__emotions emotions">
+          <div class="emotions__wrap">
+            <h2 class="emotions__title">Опишите свои эмоции:</h2>
+            <textarea class="emotions__text" name="textarea" cols="30" rows="10" placeholder="Опишите подробно свои восторги"></textarea>
+          </div>
+        </div>
+        <button class="form__btn" type="submit">Отправить отзыв</button>
       </div>
-      <div class="form__impression impression">
-        <h2 class="impression__title">Ваше впечатление:</h2>
-        <label class="impression__label">
-          <input class="impression__input" type="radio" name="impression" checked>
-          <span class="impression__label-text">Скорее положительное</span>
-        </label>
-        <label class="impression__label">
-          <input class="impression__input" type="radio" name="impression">
-          <span class="impression__label-text">Скорее отрицательное</span>
-        </label>
-        <label class="impression__label">
-          <input class="impression__input" type="radio" name="impression">
-          <span class="impression__label-text">Затрудняюсь ответить</span>
-        </label>
-      </div>
-      <div class="form__attraction attraction">
-        <h2 class="attraction__title">Посещенные достопримечательности:</h2>
-        <label class="attraction__label">
-          <input class="attraction__input" type="checkbox" name="attraction" checked>
-          <span class="attraction__label-text">Мост Дьявола</span>
-        </label>
-        <label class="attraction__label">
-          <input class="attraction__input" type="checkbox" name="attraction" checked>
-          <span class="attraction__label-text">Слайд-парк</span>
-        </label>
-        <label class="attraction__label">
-          <input class="attraction__input" type="checkbox" name="attraction">
-          <span class="attraction__label-text">Гора-Колокол</span>
-        </label>
-        <label class="attraction__label">
-          <input class="attraction__input" type="checkbox" name="attraction" checked>
-          <span class="attraction__label-text">Красные скалы</span>
-        </label>
-      </div>
-      <div class="form__emotions emotions">
-        <h2 class="emotions__title">Опишите свои эмоции:</h2>
-        <textarea class="emotions__text" name="textarea" cols="30" rows="10" placeholder="Опишите подробно свои восторги"></textarea>
-      </div>
-      <button class="form__btn" type="submit">Отправить отзыв</button>
     </form>
     <footer class="main-footer">
       <div class="main-footer__wrap">
