@@ -1,7 +1,12 @@
-.explanation {
+.explanation__wrap {
+  padding-top: 35px;
+  text-align: center;
+  max-width: 440px;
+  .container();
 }
 .explanation__title {
   margin: 0;
+  padding-bottom: 35px;
 
   font-size: 18px;
   line-height: 26px;
@@ -9,8 +14,30 @@
 }
 .explanation__about {
   margin: 0;
+  padding-bottom: 18px;
 
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+}
+@media @mobile {
+  .explanation__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media @tablet {
+  .explanation__wrap {
+    padding-top: 65px;
+    padding-bottom: 57px;
+  }
+  .explanation__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media @desktop {
+  .explanation__wrap {
+    padding-top: 100px;
+  }
 }

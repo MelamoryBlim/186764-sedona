@@ -1,14 +1,25 @@
-.features-place {
+.features-place__wrap {
+  .container();
+}
+.features-place__head-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #81b3d2;
 }
 .features-place__head {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 
-  background-color: #81b3d2;
+  box-sizing: border-box;
 }
 .features-place__title {
   margin: 0;
@@ -27,56 +38,94 @@
   line-height: 21px;
 }
 .features-place__image-layout {
-  width: 320px;
-  height: 260px;
-
+  height: 256px;
   font-size: 0;
 
   background-color: #ffffff;
-  background-image: url("../../img/photo-city@1x.jpg");
+  background-image: url("../img/photo-city@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: auto 260px;
+  background-position: 50% 50%;
+  background-size: cover;
 }
-.features-place__housing {
+.features-place__entertainment-item-title {
   margin: 0;
 
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
-.features-place__housing-about {
+.features-place__entertainment-item-about {
   margin: 0;
 
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
-.features-place__suvenirs {
-  margin: 0;
+@media @mobile {
+  .features-place__head-layout {
+    width: 100%;
+  }
+  .features-place__head {
+    width: 280px;
+    min-height: 208px;
+    padding-top: 55px;
+    padding-bottom: 40px;
 
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
+  }
+  .features-place__image-layout {
+    height: 260px
+  }
+  .features-place__entertainment {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    width: 280px;
+    padding: 0 20px;
+  }
+  .features-place__entertainment-item-layout {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  .features-place__entertainment-item-layout:last-of-type {
+    padding-bottom: 35px;
+  }
 }
-.features-place__suvenirs-about{
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-.features-place__food {
-  margin: 0;
-
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.features-place__food-about {
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+@media @tablet {
+  .features-place__head-wrap {
+    display: flex;
+  }
+  .features-place__head-layout {
+    width: 33%;
+    height: 256px;
+  }
+  .features-place__head {
+    height: 100%;
+    padding: 47px;
+  }
+  .features-place__title {
+    padding: 0 60px;
+  }
+  .features-place__image-layout {
+    width: 67%;
+  }
+  .features-place__entertainment {
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .features-place__entertainment-item-layout {
+    width: 33%;
+    padding: 0 45px;
+    padding-top: 160px;
+  }
+  .features-place__entertainment-item-layout:nth-of-type(2) {
+    order: 3;
+  }
+  .features-place__entertainment-item-title {
+    padding-bottom: 20px;
+  }
 }

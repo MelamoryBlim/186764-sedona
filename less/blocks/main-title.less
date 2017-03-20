@@ -1,16 +1,40 @@
-.main-title {
+.main-title__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .container();
 }
 .main-title__title {
   margin: 0;
+  padding: 0 10px;
 
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 .main-title__reason {
   margin: 0;
+  padding-top: 30px;
 
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+}
+@media @mobile {
+  .main-title__wrap {
+    width: 280px;
+    padding: 0 20px;
+    padding-top: 37px;
+    padding-bottom: 30px;
+  }
+}
+@media @tablet {
+  .main-title__wrap {
+    width: 490px;
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
 }

@@ -1,15 +1,60 @@
-.emotions {
+.emotions__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .container();
+  padding-top: 20px;
+  padding-bottom: 51px;
+  max-width: 960px;
 }
 .emotions__title {
   margin: 0;
+  padding-bottom: 15px;
 
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
 }
+.emotions__text {
+  border: none;
+  background-color: #f2f2f2;
+  resize: none;
+}
 .emotions__text::placeholder {
+  padding-top: 22px;
+  padding-right: 33px;
+  padding-left: 21px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+@media @mobile {
+  .emotions__wrap {
+    width: 280px;
+    border-top: 1px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media @tablet {
+  .emotions__title {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    font-size: 21px;
+    align-self: center;
+    background-color: #ffffff;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 33px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
 }

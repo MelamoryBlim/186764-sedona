@@ -1,7 +1,16 @@
-.form {
+.form__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .container();
 }
 .form__btn {
+  width: 280px;
+  max-width: 324px;
+  margin-bottom: 70px;
+  padding: 14px 0;
   border: 0;
+  align-self: center;
 
   font-size: 21px;
   line-height: 26px;
@@ -10,4 +19,60 @@
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+@media @tablet {
+  .form__wrap {
+    max-width: 940px;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form__impression {
+    order: -7;
+    width: 50%;
+  }
+  .form__person {
+    order: -6;
+    width: 50%;
+  }
+  .form__contact-inf {
+    order: -5;
+    width: 100%;
+  }
+  .form__attraction {
+    order: -4;
+    width: 100%;
+  }
+  .form__emotions {
+    order: -3;
+    width: 100%;
+  }
+  .form__btn {
+    margin-bottom: 90px;
+    width: 50%;
+    max-width: 50%;
+    &::before {
+      content: "* - обязательные поля";
+      position: absolute;
+      right: 60px;
+      font-size: 14px;
+      line-height: 26px;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
+}
+@media @desktop {
+  .form__wrap {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .form__btn {
+    margin-bottom: 95px;
+    &::before {
+      right: 120px;
+    }
+  }
 }
