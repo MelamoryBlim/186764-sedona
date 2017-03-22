@@ -1,12 +1,12 @@
 .contact-inf__wrap {
   .container();
   max-width: 280px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 28px;
 }
 .contact-inf__title {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   font-size: 18px;
   line-height: 26px;
@@ -21,23 +21,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 25px;
+    bottom: 0px;
     width: 58px;
-    height: 47px;
+    height: 58px;
     background-color: #e6e6e6;
   }
 }
 .contact-inf__label:first-of-type {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   &::before {
     content: "Ошибка, перепроверьте номер";
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 22px;
     font-size: 14px;
     line-height: 26px;
@@ -52,7 +51,9 @@
   text-transform: uppercase;
 }
 .contact-inf__input {
-  padding: 16px 58px 13px 22px;
+  padding: 20px 0;
+  padding-right: 58px;
+  padding-left: 22px;
   border: none;
   background-color: #f2f2f2;
 }
