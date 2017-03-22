@@ -1,6 +1,6 @@
 .person__wrap {
   .container();
-  max-width: 280px;
+  width: 280px;
   padding-top: 18px;
   padding-bottom: 26px;
 }
@@ -56,9 +56,18 @@
 @media @tablet {
   .person__wrap {
     margin-right: 0;
+    padding-left: 59px;
+    width: auto;
+    min-width: 265px;
+    max-width: 400px;
   }
   .person__title {
+    padding-bottom: 57px;
     text-align: left;
     font-size: 21px;
+  }
+}
+@media @desktop {
+  .person__wrap {
   }
 }
