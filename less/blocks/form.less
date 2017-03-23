@@ -4,11 +4,15 @@
   flex-direction: column;
   .container();
 }
+.form__impression {
+  margin-top: 18px;
+  margin-bottom: 43px;
+}
 .form__btn {
   width: 280px;
   max-width: 324px;
-  margin-bottom: 70px;
-  padding: 14px 0;
+  margin-bottom: 73px;
+  padding: 16px 0;
   border: 0;
   align-self: center;
 
@@ -22,7 +26,7 @@
 }
 @media @tablet {
   .form__wrap {
-    max-width: 940px;
+    max-width: 960px;
     padding-left: 60px;
     padding-right: 60px;
     flex-direction: row;
@@ -30,8 +34,19 @@
     justify-content: space-between;
   }
   .form__impression {
+    position: relative;
+    margin-bottom: 66px;
     order: -7;
     width: 50%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #dbdbdb;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
   }
   .form__person {
     order: -6;
@@ -50,18 +65,9 @@
     width: 100%;
   }
   .form__btn {
-    margin-bottom: 90px;
+    margin-bottom: 96px;
     width: 50%;
     max-width: 50%;
-    &::before {
-      content: "* - обязательные поля";
-      position: absolute;
-      right: 60px;
-      font-size: 14px;
-      line-height: 26px;
-      color: #333333;
-      text-transform: uppercase;
-    }
   }
 }
 @media @desktop {
@@ -70,9 +76,6 @@
     padding-right: 120px;
   }
   .form__btn {
-    margin-bottom: 95px;
-    &::before {
-      right: 120px;
-    }
+    margin-bottom: 101px;
   }
 }

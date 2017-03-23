@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   .container();
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 51px;
   max-width: 960px;
 }
 .emotions__title {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 
   font-size: 18px;
   line-height: 26px;
@@ -17,15 +17,17 @@
   text-transform: uppercase;
 }
 .emotions__text {
+  height: 160px;
+  padding: 0;
   border: none;
   background-color: #f2f2f2;
   resize: none;
 }
 .emotions__text::placeholder {
-  padding-top: 22px;
-  padding-right: 33px;
-  padding-left: 21px;
-  font-size: 18px;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-left: 19px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
@@ -39,9 +41,23 @@
   }
 }
 @media @tablet {
+  .emotions__wrap {
+    padding-bottom: 60px;
+    &::before {
+      content: "* – обязательные поля";
+      position: absolute;
+      bottom: -42px;;
+      right: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
   .emotions__title {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
     padding-bottom: 55px;
     font-size: 21px;
     align-self: center;
@@ -52,9 +68,17 @@
       z-index: -1;
       left: 0;
       right: 0;
-      top: 33px;
+      top: 30px;
       height: 1px;
       background-color: #dbdbdb;
     }
+  }
+}
+@media @desktop {
+  .emotions__wrap {
+    padding-bottom: 58px;
+  }
+  .emotions__title {
+    padding-bottom: 57px;
   }
 }

@@ -7,33 +7,33 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  &--lower {
+    height: 158px;
+  }
 }
 .promo-view__logo-title {
   margin: auto;
+  padding-bottom: 21px;
 }
 
 @media @tablet {
   .promo-view__slogan-layout {
-    height: 518px;
+    &--higher {
+      height: 518px;
+    }
+    &--lower {
+      height: 290px;
+    }
   }
   .promo-view__logo-title {
-    height: 76px;
-    width: 460px;
-  }
-}
-.photo-page .promo-view__slogan-layout,
-.form-page .promo-view__slogan-layout {
-  height: 158px;
-}
-@media @tablet {
-  .photo-page .promo-view__slogan-layout,
-  .form-page .promo-view__slogan-layout {
-    height: 301px;
+    height: 78px;
+    width: 458px;
   }
 }
 @media @desktop {
-  .photo-page .promo-view__slogan-layout,
-  .form-page .promo-view__slogan-layout {
-    height: 290px;
+  .promo-view__slogan-layout {
+    &--lower {
+      height: 301px;
+    }
   }
 }

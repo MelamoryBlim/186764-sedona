@@ -20,6 +20,7 @@
 }
 .photo__about {
   margin: 0;
+  padding-bottom: 9px;
 
   font-size: 14px;
   line-height: 24px;
@@ -72,7 +73,14 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 20px;
+    padding-bottom: 6px;
     background-color: #f2f2f2;
+  }
+  .photo__item:not(:first-of-type) .photo__description {
+    padding-right: 35px;
+  }
+  .photo__number-likes {
+    padding-top: 12px;
   }
 }
 @media @desktop {

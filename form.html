@@ -18,12 +18,12 @@
             <li class="main-header__item"><a class="main-header__item-link" href="#">HTML Academy</a></li>
           </ul>
           <button class="main-header__toggle" type="button">Закрыть</button>
-          <a class="main-header__logo-wrap">
+          <a class="main-header__logo-wrap" href="index.html">
             <img class="main-header__logo" src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
           </a>
         </nav>
         <div class="main-header__promo-view promo__view">
-        <div class="promo-view__slogan-layout">
+        <div class="promo-view__slogan-layout promo-view__slogan-layout--lower">
           <img class="promo-view__logo-title" src="img/text-sedona.svg" alt="Sedona" width="280" height="47">
         </div>
       </div>
@@ -50,7 +50,7 @@
                 <input class="person__input" type="text" placeholder="Иванов" name="name-mid">
               </label>
               <label class="person__label">
-                <span class="person__label-text">Отчество</span>
+                <span class="person__label-text">Отчество: </span>
                 <input class="person__input" type="text" placeholder="Александрович" name="name-last">
               </label>
             </div>
@@ -61,7 +61,7 @@
             <h2 class="contact-inf__title">Контактная информация:</h2>
             <div class="contact-inf__label-wrap">
               <label class="contact-inf__label">
-                <span class="contact-inf__label-text">Контактный телефон*:</span>
+                <span class="contact-inf__label-text"><span class="contact-inf__label-text-hidden">Контактный</span> телефон*:</span>
                 <input class="contact-inf__input" type="text" placeholder="Введите телефон" name="tel">
               </label>
               <label class="contact-inf__label">
@@ -116,16 +116,16 @@
         <div class="form__emotions emotions">
           <div class="emotions__wrap">
             <h2 class="emotions__title">Опишите свои эмоции:</h2>
-            <textarea class="emotions__text" name="textarea" cols="30" rows="10" placeholder="Опишите подробно свои восторги"></textarea>
+            <textarea class="emotions__text" name="textarea" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </div>
         <button class="form__btn" type="submit">Отправить отзыв</button>
       </div>
     </form>
     <footer class="main-footer">
-      <div class="main-footer__wrap">
+      <div class="main-footer__wrap main-footer__wrap--form">
         <p class="main-footer__hash">#visitsedona</p>
-        <div class="main-footer__socials socials">
+        <div class="main-footer__socials main-footer__socials--form socials">
           <div class="socials__wrap">
             <a class="socials__link" href="#">Twit</a>
             <a class="socials__link" href="#">FB</a>
@@ -133,12 +133,28 @@
           </div>
         </div>
         <div class="main-footer__copyright-wrap">
-          <p class="main-footer__copyright">Разаботано</p>
+          <p class="main-footer__copyright">Разработано</p>
           <a class="main-footer__copyright-img-layout" href="https://htmlacademy.ru">
             <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
           </a>
         </div>
       </div>
     </footer>
+    <section class="popup-success popup-success--close">
+      <div class="popup-success__wrap">
+        <h2 class="popup-success__title">Ваш отзыв отправлен!</h2>
+        <p class="popup-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup-success__btn-wrap">
+          <button class="popup-success__btn" type="button">закрыть окно</button>
+        </div>
+      </div>
+    </section>
+    <section class="popup-falure popup-falure--close">
+      <div class="popup-falure__wrap">
+        <h2 class="popup-falure__title">Что-то пошло не так!</h2>
+        <p class="popup-falure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup-falure__btn" type="button">ок</button>
+      </div>
+    </section>
   </body>
 </html>

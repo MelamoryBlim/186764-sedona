@@ -49,6 +49,7 @@
 }
 .features-place__entertainment-item-title {
   margin: 0;
+  padding-bottom: 14px;
 
   font-size: 18px;
   line-height: 26px;
@@ -67,9 +68,9 @@
   }
   .features-place__head {
     width: 280px;
-    min-height: 208px;
+    min-height: 196px;
     padding-top: 55px;
-    padding-bottom: 40px;
+    padding-bottom: 29px;
 
   }
   .features-place__image-layout {
@@ -82,14 +83,16 @@
 
     width: 280px;
     padding: 0 20px;
+    padding-top: 35px;
+    padding-bottom: 37px;
   }
   .features-place__entertainment-item-layout {
-    padding-top: 35px;
+    padding-bottom: 28px;
     padding-left: 50px;
     padding-right: 20px;
   }
   .features-place__entertainment-item-layout:last-of-type {
-    padding-bottom: 35px;
+    padding-bottom: 0;
   }
 }
 @media @tablet {
@@ -102,10 +105,12 @@
   }
   .features-place__head {
     height: 100%;
-    padding: 47px;
+    padding: 45px;
   }
   .features-place__title {
-    padding: 0 60px;
+    font-size: 21px;
+    width: 200px;
+    align-self: center;
   }
   .features-place__image-layout {
     width: 67%;
@@ -127,5 +132,11 @@
   }
   .features-place__entertainment-item-title {
     padding-bottom: 20px;
+    font-size: 21px;
+  }
+}
+@media @desktop {
+  .features-place__head {
+    padding: 13%;
   }
 }

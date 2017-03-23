@@ -44,23 +44,32 @@
 }
 @media @tablet {
   .main-footer__wrap {
-    max-width: 940px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 36px 60px;
     padding-top: 0;
   }
+  .main-footer__socials {
+      padding-right: 13px;
+  }
 }
 @media @desktop {
   .main-footer__wrap {
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 44px;
+    padding-left: 133px;
+    box-sizing: border-box;
   }
-  .main-footer__copyright-wrap {
-    margin-right: -16px;
+  .main-footer__socials {
+    padding-right: 100px;
   }
-  .main-footer__hash {
-    margin-left: 72px;
+  .main-footer__socials--form {
+    padding-right: 22px;
+  }
+  .main-footer__wrap--form {
+    padding-right: 121px;
   }
 }

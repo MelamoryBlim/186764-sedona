@@ -1,8 +1,8 @@
 .person__wrap {
   .container();
-  max-width: 280px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 280px;
+  padding-top: 18px;
+  padding-bottom: 26px;
 }
 .person__title {
   margin: 0;
@@ -30,10 +30,9 @@
 .person__input {
   flex-grow: 1;
   min-width: 0;
-  margin-left: 14px;
   margin-bottom: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-left: 14px;
+  padding: 20px 0;
   padding-left: 22px;
   border: none;
   background-color: #f2f2f2;
@@ -57,9 +56,18 @@
 @media @tablet {
   .person__wrap {
     margin-right: 0;
+    padding-left: 59px;
+    width: auto;
+    min-width: 265px;
+    max-width: 400px;
   }
   .person__title {
+    padding-bottom: 57px;
     text-align: left;
     font-size: 21px;
+  }
+}
+@media @desktop {
+  .person__wrap {
   }
 }

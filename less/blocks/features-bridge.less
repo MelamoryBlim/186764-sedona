@@ -4,7 +4,7 @@
   .container();
 }
 .features-bridge__background {
-  padding: 40px 30px;
+  padding: 40px 20px;
   height: 191px;
   background-color: #81b3d2;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  min-height: 105px;
+  height: 100%;
   width: 280px;
 
   color: #ffffff;
@@ -23,6 +23,8 @@
 }
 .features-bridge__title {
   margin: 0;
+  width: 151px;
+  align-self: center;
 
   font-size: 18px;
   line-height: 26px;
@@ -33,6 +35,8 @@
 }
 .features-bridge__about-features {
   margin: 0;
+  max-width: 220px;
+  align-self: center;
 
   font-size: 14px;
   line-height: 21px;
@@ -52,17 +56,27 @@
   .features-bridge-wrap {
     display: flex;
     flex-direction: row;
+    height: 256px;
   }
   .features-bridge__background {
     width: 33%;
-    height: 256px;
+    height: 100%;
     order: 2;
+    padding: 45px;
   }
   .features-bridge__head {
     width: 100%;
     height: 100%;
   }
+  .features-bridge__title {
+    font-size: 21px;
+  }
   .features-bridge__picture-layout {
     width: 67%;
+  }
+}
+@media @desktop {
+  .features-bridge__background {
+    padding: 55px;
   }
 }
