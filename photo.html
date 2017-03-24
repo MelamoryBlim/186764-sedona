@@ -38,7 +38,15 @@
         <section class="media__photo photo">
           <div class="photo__wrap">
             <figure class="photo__item">
-              <img class="photo__img" src="img/photo-1-mobile@1x.jpg" alt="фото1" width="280" height="280">
+              <div class="photo__img-wrap">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x,
+                  img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x,
+                  img/photo-1-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="фото1">
+                </picture>
+              </div>
               <figcaption class="photo__description">
                 <div class="photo__description-text">
                   <h2 class="photo__title">Неродные просторы</h2>
@@ -48,7 +56,15 @@
               </figcaption>
             </figure>
             <figure class="photo__item">
-              <img class="photo__img" src="img/photo-2-mobile@1x.jpg" alt="фото2" width="280" height="280">
+              <div class="photo__img-wrap">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x,
+                  img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x,
+                  img/photo-2-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="фото2" width="280" height="280">
+                </picture>
+              </div>
               <figcaption class="photo__description">
                 <div class="photo__description-text">
                   <h2 class="photo__title">Местная растительность</h2>
@@ -58,7 +74,15 @@
               </figcaption>
             </figure>
             <figure class="photo__item">
-              <img class="photo__img" src="img/photo-3-mobile@1x.jpg" alt="фото3" width="280" height="280">
+              <div class="photo__img-wrap">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x,
+                  img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x,
+                  img/photo-3-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="фото3" width="280" height="280">
+                </picture>
+              </div>
               <figcaption class="photo__description">
                 <div class="photo__description-text">
                   <h2 class="photo__title">Дорога на север</h2>
@@ -68,7 +92,15 @@
               </figcaption>
             </figure>
             <figure class="photo__item">
-              <img class="photo__img" src="img/photo-4-mobile@1x.jpg" alt="фото4" width="280" height="280">
+              <div class="photo__img-wrap">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x,
+                  img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x,
+                  img/photo-4-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="фото4" width="280" height="280">
+                </picture>
+              </div>
               <figcaption class="photo__description">
                 <div class="photo__description-text">
                   <h2 class="photo__title">Мост дьявола</h2>

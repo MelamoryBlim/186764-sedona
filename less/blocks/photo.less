@@ -6,9 +6,12 @@
 .photo__item {
   margin: 0;
 }
-.photo__img {
+.photo__img-wrap {
+  margin: 0;
+  width: 280px;
+}
+.photo__img-wrap img {
   display: block;
-  margin: 0
 }
 .photo__title {
   margin: 0;
@@ -42,7 +45,7 @@
   .photo__item:last-of-type {
     border-bottom: 1px solid #e5e5e5;
   }
-  .photo__img {
+  .photo__img-wrap {
     margin-bottom: 16px;
   }
   .photo__number-likes {
@@ -54,6 +57,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+  }
+  .photo__img-wrap {
+    width: 100%;
   }
   .photo__item:first-of-type .photo__img {
     width: 100%;
@@ -86,6 +92,7 @@
 @media @desktop {
   .photo__item:not(:first-of-type) {
     width: 33.3%;
+    flex-grow: 1;
   }
   .photo__description {
     position: relative;
