@@ -31,6 +31,12 @@
     left: 0;
     top: -13px;
   }
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
 .impression__label:last-of-type {
   margin-bottom: 0;
@@ -48,6 +54,9 @@
   height: 22px;
   background-color: #333333;
   border-radius: 50%;
+}
+.impression__input:checked + .impression__label:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 .impression__label-text {
   font-size: 18px;

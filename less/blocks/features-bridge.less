@@ -41,16 +41,19 @@
   font-size: 14px;
   line-height: 21px;
 }
-.features-bridge__picture-layout {
+.features-bridge__picture-layout img {
+  display: block;
   height: 256px;
-
-  font-size: 0;
-
-  background-color: #ffffff;
-  background-image: url("../img/photo-bridge@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  width: 100%;
+}
+@media @mobile {
+  .features-bridge__picture-layout {
+    display: flex;
+    justify-content: center;
+  }
+  .features-bridge__picture-layout img {
+    width: 320px;
+  }
 }
 @media @tablet {
   .features-bridge-wrap {

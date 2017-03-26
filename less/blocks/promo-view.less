@@ -1,14 +1,17 @@
 .promo-view__slogan-layout {
   height: 389px;
+  width: 100%;
   display: flex;
 
   background-color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom center;
   background-size: cover;
+  box-sizing: border-box;
   &--lower {
     height: 158px;
+    background-size: auto 389px;
   }
   @media @retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -21,15 +24,14 @@
 
 @media @tablet {
   .promo-view__slogan-layout {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    &--higher {
-      height: 518px;
-    }
+    height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     &--lower {
       height: 290px;
+      background-size: auto 518px;
     }
     @media @retina {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
   .promo-view__logo-title {
@@ -39,12 +41,9 @@
 }
 @media @desktop {
   .promo-view__slogan-layout {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
     &--lower {
       height: 301px;
-    }
-    @media @retina {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: auto 518px;
     }
   }
 }

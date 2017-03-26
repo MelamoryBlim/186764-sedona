@@ -52,11 +52,24 @@
   text-transform: uppercase;
 }
 .contact-inf__input {
-  padding: 20px 0;
+  padding: 15px 0;
   padding-right: 58px;
   padding-left: 22px;
-  border: none;
+  border: 4px solid #f2f2f2;
+
+  font-size: 18px;
+  font-weight: bold;
+
   background-color: #f2f2f2;
+  box-sizing: border-box;
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+  }
 }
 .contact-inf__input::placeholder {
   font-size: 18px;
