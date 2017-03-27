@@ -19,7 +19,11 @@
           </ul>
           <button class="main-header__toggle" type="button">Закрыть</button>
           <a class="main-header__logo-wrap" href="index.html">
-            <img class="main-header__logo" src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-header__logo" src="img/logo-sedona-mobile.svg" alt="City Sedona" width="102" height="83">
+            </picture>
           </a>
         </nav>
         <div class="main-header__promo-view promo__view">

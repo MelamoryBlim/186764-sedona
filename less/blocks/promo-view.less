@@ -21,7 +21,16 @@
   margin: auto;
   padding-bottom: 21px;
 }
-
+@media @mobile {
+  .promo-view__logo-title {
+    width: 229px;
+    height: 39px;
+    &--index {
+      width: 282px;
+      height: 214px;
+    }
+  }
+}
 @media @tablet {
   .promo-view__slogan-layout {
     height: 518px;
@@ -30,13 +39,19 @@
       height: 290px;
       background-size: auto 518px;
     }
-    @media @retina {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
   }
   .promo-view__logo-title {
     height: 78px;
     width: 458px;
+    &--index {
+      width: 460px;
+      height: 350px;
+    }
+  }
+  @media @retina {
+    .promo-view__slogan-layout {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 @media @desktop {
