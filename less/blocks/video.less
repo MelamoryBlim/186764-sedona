@@ -87,7 +87,6 @@
   height: 20px;
   font-size: 0;
   background-color: transparent;
-  background-image: url(../img/icon-video-replay.svg);
 }
 .video__subtitle {
   padding: 0;
@@ -98,7 +97,6 @@
   height: 20px;
   font-size: 0;
   background-color: transparent;
-  background-image: url(../img/icon-video-subtitles.svg);
 }
 .video__full-screan {
   padding: 0;
@@ -107,7 +105,11 @@
   height: 20px;
   font-size: 0;
   background-color: transparent;
-  background-image: url(../img/icon-video-fullscreen.svg);
+}
+.video__replay-icon,
+.video__subtitle-icon,
+.video__full-screan-icon{
+  fill: #5c6870;
 }
 @media @mobile {
   .video__video-player {
@@ -169,6 +171,11 @@
     padding-right: 41px;
     padding-left: 35px;
     box-sizing: border-box;
+  }
+  .video__replay-icon,
+  .video__subtitle-icon,
+  .video__full-screan-icon{
+    fill: #ffffff;
   }
 }
 @media @desktop {
