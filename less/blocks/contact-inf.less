@@ -22,15 +22,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    width: 58px;
-    height: 58px;
-    background-color: #e6e6e6;
-  }
 }
 .contact-inf__label:first-of-type {
   margin-bottom: 40px;
@@ -51,13 +42,52 @@
   line-height: 26px;
   text-transform: uppercase;
 }
-.contact-inf__input {
-  padding: 20px 0;
-  padding-right: 58px;
-  padding-left: 22px;
-  border: none;
-  background-color: #f2f2f2;
+.contact-inf__input-wrap {
+  position: relative;
+  display: flex;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    width: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+.contact-inf__label:nth-of-type(1) .contact-inf__input-wrap::after {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 18px 18px;
+}
+.contact-inf__label:nth-of-type(2) .contact-inf__input-wrap::after {
+  background-image: url("../img/icon-mail.svg");
+  background-size: 16px 16px;
+}
+.contact-inf__input {
+  flex-grow: 1;
+  padding: 15px 0;
+  padding-left: 18px;
+  border: 4px solid #f2f2f2;
+  outline: none;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+  }
+}
+
 .contact-inf__input::placeholder {
   font-size: 18px;
   line-height: 26px;
@@ -77,6 +107,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 35px;
+    padding-top: 19px;
   }
   .contact-inf__title {
     padding-left: 60px;
@@ -138,7 +169,7 @@
     padding-right: 15px;
     padding-left: 0;
   }
-  .contact-inf__input {
+  .contact-inf__input-wrap {
     flex-grow: 1;
   }
 }

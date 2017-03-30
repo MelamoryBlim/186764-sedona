@@ -21,6 +21,9 @@
 
   box-sizing: border-box;
 }
+.features-place__triangle {
+  display: none;
+}
 .features-place__title {
   margin: 0;
 
@@ -39,13 +42,14 @@
 }
 .features-place__image-layout {
   height: 256px;
-  font-size: 0;
-
-  background-color: #ffffff;
-  background-image: url("../img/photo-city@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+}
+.features-place__entertainment-item-layout {
+  position: relative;
+}
+.features-place__entertainment-item-icon {
+  position: absolute;
+  left: 1px;
+  top: -5px;
 }
 .features-place__entertainment-item-title {
   margin: 0;
@@ -64,7 +68,16 @@
 }
 @media @mobile {
   .features-place__head-layout {
+    position: relative;
     width: 100%;
+  }
+  .features-place__triangle {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    right: 0;
+    display: block;
+    fill: #ffffff;
   }
   .features-place__head {
     width: 280px;
@@ -74,7 +87,15 @@
 
   }
   .features-place__image-layout {
-    height: 260px
+    height: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  .features-place__image-layout img {
+    display: block;
+    height: 260px;
+    width: 320px;
+
   }
   .features-place__entertainment {
     display: flex;
@@ -104,16 +125,21 @@
     height: 256px;
   }
   .features-place__head {
+    display: flex;
+    align-items: center;
     height: 100%;
-    padding: 45px;
+    padding: 45px 41px;
   }
   .features-place__title {
     font-size: 21px;
-    width: 200px;
     align-self: center;
   }
   .features-place__image-layout {
     width: 67%;
+  }
+  .features-place__image-layout img {
+    width: 100%;
+    height: 256px;
   }
   .features-place__entertainment {
     height: 330px;
@@ -130,6 +156,25 @@
   .features-place__entertainment-item-layout:nth-of-type(2) {
     order: 3;
   }
+  .features-place__entertainment-item-icon {
+    left: 50%;
+    top: 59px;
+  }
+  .features-place__entertainment-item-layout:nth-of-type(1) .features-place__entertainment-item-icon {
+    width: 75px;
+    height: 72px;
+    margin-left: -38px
+  }
+  .features-place__entertainment-item-layout:nth-of-type(2) .features-place__entertainment-item-icon {
+    width: 64px;
+    height: 75px;
+    margin-left: -38px
+  }
+  .features-place__entertainment-item-layout:nth-of-type(3) .features-place__entertainment-item-icon {
+    width: 77px;
+    height: 68px;
+    margin-left: -39px
+  }
   .features-place__entertainment-item-title {
     padding-bottom: 20px;
     font-size: 21px;
@@ -138,5 +183,12 @@
 @media @desktop {
   .features-place__head {
     padding: 13%;
+  }
+  .features-place__entertainment-item-layout {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .features-place__entertainment-item-about--break {
+    display: block;
   }
 }

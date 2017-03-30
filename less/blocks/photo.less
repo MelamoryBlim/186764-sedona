@@ -6,9 +6,12 @@
 .photo__item {
   margin: 0;
 }
-.photo__img {
+.photo__img-wrap {
+  margin: 0;
+  width: 280px;
+}
+.photo__img-wrap img {
   display: block;
-  margin: 0
 }
 .photo__title {
   margin: 0;
@@ -20,33 +23,44 @@
 }
 .photo__about {
   margin: 0;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
 
   font-size: 14px;
   line-height: 24px;
 }
 .photo__number-likes {
+  display: flex;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: inherit;
   text-decoration: none;
 }
+.photo__number-likes-btn,
+.photo__number-likes-numeric {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-weight: bold;
+}
+.photo__number-likes-btn {
+  margin-right: 14px;
+}
+.photo__number-likes-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
 @media @mobile {
   .photo__item {
     align-self: center;
-    padding: 22px 20px 15px 20px;
-    padding-top: 22px;
+    padding: 22px 20px 17px 20px;
     border-top: 1px solid #e5e5e5;
   }
   .photo__item:last-of-type {
     border-bottom: 1px solid #e5e5e5;
   }
-  .photo__img {
+  .photo__img-wrap {
     margin-bottom: 16px;
-  }
-  .photo__number-likes {
-    padding-left: 37px;
   }
 }
 @media @tablet {
@@ -54,6 +68,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+  }
+  .photo__img-wrap {
+    width: 100%;
   }
   .photo__item:first-of-type .photo__img {
     width: 100%;
@@ -73,19 +90,23 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 20px;
-    padding-bottom: 6px;
+    padding-bottom: 15px;
     background-color: #f2f2f2;
   }
   .photo__item:not(:first-of-type) .photo__description {
     padding-right: 35px;
   }
-  .photo__number-likes {
-    padding-top: 12px;
+  .photo__about {
+    padding-bottom: 0;
+  }
+  .photo__number-likes-btn {
+    margin-right: 11px;
   }
 }
 @media @desktop {
   .photo__item:not(:first-of-type) {
     width: 33.3%;
+    flex-grow: 1;
   }
   .photo__description {
     position: relative;
@@ -93,5 +114,11 @@
     margin-top: -80px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  .photo__number-likes-numeric{
+    color: inherit;
+  }
+  .photo__number-likes-icon {
+    fill: #ffffff;
   }
 }

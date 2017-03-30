@@ -13,7 +13,6 @@
   text-align: center;
 }
 .location__about {
-  display: flex;
   margin: 0 auto;
   max-width: 458px;
 
@@ -37,11 +36,18 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
+  text-decoration: none;
 
   background-color: #81b3d2;
   cursor: pointer;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
-
 @media @tablet {
   .location__wrap {
     padding: 0;
@@ -51,6 +57,9 @@
     padding-bottom: 30px;
     font-size: 30px;
     line-height: 30px;
+  }
+  .location__about-break {
+    display: block;
   }
   .location__button {
     margin-top: 42px;
