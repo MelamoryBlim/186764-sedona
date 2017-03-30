@@ -10,9 +10,10 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
+var svgstore = require("gulp-svgstore");
 var server = require("browser-sync").create();
 
-gulp.task("symbols", funcion() {
+gulp.task("symbols", function() {
   return gulp.src("img/icons/*.svg")
   .pipe(svgmin())
   .pipe(svgstore({
@@ -26,7 +27,7 @@ gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,gif}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpgtra({progressive: true})
+    imagemin.jpegtran({progressive: true})
   ]))
   .pipe(gulp.dest("img"));
 });
