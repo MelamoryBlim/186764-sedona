@@ -21,9 +21,6 @@
 
   box-sizing: border-box;
 }
-.features-place__triangle {
-  display: none;
-}
 .features-place__title {
   margin: 0;
 
@@ -70,21 +67,24 @@
   .features-place__head-layout {
     position: relative;
     width: 100%;
-  }
-  .features-place__triangle {
-    position: absolute;
-    top: -13px;
-    left: 0;
-    right: 0;
-    display: block;
-    fill: #ffffff;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -24px;
+      height: 40px;
+
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
   .features-place__head {
     width: 280px;
     min-height: 196px;
     padding-top: 55px;
     padding-bottom: 29px;
-
   }
   .features-place__image-layout {
     height: 260px;
@@ -95,7 +95,6 @@
     display: block;
     height: 260px;
     width: 320px;
-
   }
   .features-place__entertainment {
     display: flex;
